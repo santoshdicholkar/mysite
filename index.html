@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Santosh Dicholkar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@500&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="top-container">
+    <img class="top-cloud" src="cloud.png" alt="cloud">
+    <img class="emogi" src="Santosh 01.png" alt="cloud">
+    <h1>I'm Santosh.</h1>
+    <p class="name"><span class="Sr">Sr</span>.3D Visualizer</p>
+    <img class="bottom-cloud" src="cloud.png" alt="cloud">
+    <img src="mountain.png" alt="mountain">
+  </div>
+
+  <div class="middle-container">
+    <div class="profile">
+      <img class="santosh" src="Santosh.png" alt="Santosh pic">
+      <h2>Hello.</h2>
+      <p class="tag">I am a Sr.3D Visualizer.I am the founder of 3D & 2D design services.</p>
+    </div>
+    <hr>
+    <div class="skills">
+      <h2>My Skills.</h2>
+      <div class="skill-row">
+        <div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="view.jpg" style="width:150%">
+  <img class="mySlides" src="view1.jpg" style="width:150%">
+  <img class="mySlides" src="view2.jpg" style="width:150%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+
+        <h3>3D Architectural Visualization Portfolio</h3>
+        <p class="tag">We make Render of a high level Photorealistic, We design Interior spaces with a high level of detail and always at the forefront with the latest trends in interior design and furniture.</p>
+      </div>
+      <div class="skill-row">
+        <video width="1000" controls>
+  <source src="87.mp4" type="video/mp4">
+  <source src="87.ogg" type="video/ogg">
+  Your browser does not support HTML video.
+</video>
+
+        <img class="" src="" alt="">
+        <h3>3D ARCHITECTURAL WALKTHROUGH ANIMATION</h3>
+        <p class="tag">The only Walkthrough Expert Company, which provides the fastest delivery of 3D Walkthrough Animation for Builders & Real Estate Developers. We are providing exclusive 3D Architectural Animation Services which would really enhance your project and take it to another level.</p>
+      </div>
+    </div>
+    <hr>
+    <div class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3>We believe in being people's first choice and trusted company for providing visualization solutions.</h3>
+      <h2>"Let us put our creativity and 3D experience at your service".</h2>
+
+      <a href="mailto:name@email.com" class="myButton">CONTACT ME</a>
+
+
+
+    </div>
+  </div>
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+    <a class="footer-link" href="https://twitter.com/">Twitter</a>
+    <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+    <p class="copyright">© 2018 Santosh Dicholkar.</p>
+  </div>
+
+
+
+</body>
+
+</html>
